@@ -50,7 +50,9 @@ OCP\JSON::checkAppEnabled ( 'shorty' );
 
 try
 {
-	$p_id      = OC_Shorty_Tools::shorty_id ( );
+	$p_id      = OC_Shorty_Type::req_argument ( 'customid',OC_Shorty_Type::STRING, FALSE );
+    $p_id      = $p_id ? trim($p_id) : OC_Shorty_Tools::shorty_id ( );
+	$p_id      = empty($p_id) ? OC_Shorty_Tools::shorty_id ( ) : $p_id;
 	$p_status  = OC_Shorty_Type::req_argument ( 'status',  OC_Shorty_Type::STATUS, FALSE );
 	$p_title   = OC_Shorty_Type::req_argument ( 'title',   OC_Shorty_Type::STRING, FALSE );
 	$p_target  = OC_Shorty_Type::req_argument ( 'target',  OC_Shorty_Type::URL,    TRUE  );

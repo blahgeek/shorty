@@ -1617,6 +1617,7 @@ OC.Shorty={
 				var title =dialog.find('#title').val()||dialog.find('#title').attr('placeholder');
 				var notes =dialog.find('#notes').val()||'';
 				var until =dialog.find('#until').val()||'';
+                var customid = dialog.find("#customid").val()||'';
 				// store favicon from meta data, except it is the internal default blank
 				var favicon = dialog.find('#meta #favicon').attr('src');
 				favicon=(favicon==dialog.find('#meta #favicon').attr('data'))?'':favicon;
@@ -1634,6 +1635,7 @@ OC.Shorty={
 						title:   title,
 						notes:   notes,
 						until:   until,
+                        customid:customid, 
 						favicon: favicon
 					};
 					if (OC.Shorty.Debug) OC.Shorty.Debug.log(data);

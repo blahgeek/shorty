@@ -64,6 +64,8 @@
 		<br />
 		<label for="title"><?php p(OC_Shorty_L10n::t('Title').':'); ?></label>
 		<input id="title" name="title" type="text" maxlength="80" data="" class="" placeholder=""/>
+		<label for="title"><?php p(OC_Shorty_L10n::t('Customid').':'); ?></label>
+		<input id="customid" name="customid" type="text" data="" class="" placeholder=""/>
 		<br />
 		<span class="label-line">
 			<label for="status"><?php p(OC_Shorty_L10n::t('Status').':'); ?></label>
