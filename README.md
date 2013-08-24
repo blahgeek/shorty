@@ -1,6 +1,10 @@
 # Shorty
 
-- - -
+## Added By Me
+
+- Custom ID available
+- show source url on table
+
 
 ## Repository content
 
