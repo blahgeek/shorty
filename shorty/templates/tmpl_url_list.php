@@ -73,6 +73,7 @@
 					data-shade="actions/shade"></div></th>
 			<th id="title"  ><div><?php p(OC_Shorty_L10n::t('Title'));      ?></div></th>
 			<th id="target" ><div><?php p(OC_Shorty_L10n::t('Target'));     ?></div></th>
+			<th id="source" ><div><?php p(OC_Shorty_L10n::t('Source'));     ?></div></th>
 			<th id="clicks" ><div><?php p(OC_Shorty_L10n::t('Clicks'));     ?></div></th>
 			<th id="until"  ><div><?php p(OC_Shorty_L10n::t('Expiration')); ?></div></th>
 			<th id="status" ><div><?php p(OC_Shorty_L10n::t('Status'));     ?></div></th>
@@ -160,6 +161,7 @@
 			<td id="favicon"></td>
 			<td id="title"  ></td>
 			<td id="target" ></td>
+            <td id="source"  ></td>
 			<td id="clicks" ></td>
 			<td id="until"  ></td>
 			<td id="status" ></td>
