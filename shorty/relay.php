@@ -161,7 +161,7 @@ try
 				// finish this script to record the click, even if the client detaches right after the redirect
 				ignore_user_abort ( TRUE );
 				// forward to target, regardless of who sends the request
-				header("HTTP/1.0 301 Moved Permanently");
+				header("HTTP/1.0 302 Moved Temporarily");
 				// http forwarding header
 				header ( sprintf('Location: %s', $target) );
 				// register click
