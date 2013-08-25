@@ -4,6 +4,7 @@
 
 - Custom ID available
 - show source url on table
+- using 302 http code
 
 
 ## Repository content
